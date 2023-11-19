@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Modal</title>
+    <title>Register</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -15,13 +15,22 @@
 
 <body class="bg-gray-200 flex items-center justify-center h-screen">
     <div class="bg-white p-8 rounded-lg shadow-lg relative" style="width: 400px;">
-        <h2 class="text-2xl font-semibold mb-6">Great to have you back!</h2>
+        <h2 class="text-2xl font-semibold mb-6">Welcome!</h2>
         <form>
             <div class="mb-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
-                    Username or email *
+                    Username*
                 </label>
                 <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username">
+                <div class="flex items-center justify-between mt-1">
+
+                </div>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                    Email *
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" placeholder="Email">
                 <div class="flex items-center justify-between mt-1">
 
                 </div>
@@ -32,17 +41,11 @@
                 </label>
                 
                 <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************">
-                <a href="#" class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" style="float: right;">
-                    Lost Password?
-                </a>
-                <label class="inline-flex items-center">
-                        <input type="checkbox" class="form-checkbox text-indigo-600" id="remember">
-                        <span class="ml-2 text-sm text-gray-700">Remember</span>
-                    </label>
+
             </div>
             <div class="flex items-center justify-between">
                 <button class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full" type="button">
-                    SIGN IN TO YOUR ACCOUNT
+                Register
                 </button>
             </div>
         </form>
@@ -58,8 +61,8 @@
             </button>
         </div>
         <div class="text-center mt-4">
-            <a href="register.php" class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800">
-                Not a member? <span class="text-teal-500">Create an account</span>
+            <a href="login.php" class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800">
+                Member? <span class="text-teal-500">Login to account</span>
             </a>
         </div>
     </div>

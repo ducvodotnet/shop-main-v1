@@ -3,7 +3,7 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>
-   Elessi
+   Header
   </title>
   <script src="https://cdn.tailwindcss.com">
   </script>
@@ -27,9 +27,9 @@
    <div class="container mx-auto flex items-center justify-between">
     <!-- Logo and navigation -->
     <div class="flex items-center">
-     <img alt="Elessi logo" class="mr-6" src="https://placehold.co/150x50"/>
+     <img alt="Elessi logo" class="mr-6" src="./public/img/logo.jpg"/>
      <nav class="hidden md:flex space-x-6">
-      <a class="text-gray-700 hover:text-gray-900" href="#">
+      <a class="text-gray-700 hover:text-gray-900" href="index.php">
        HOME
       </a>
       <a class="text-gray-700 hover:text-gray-900" href="#">
@@ -52,15 +52,15 @@
       <i class="far fa-heart">
       </i>
      </a>
-     <a class="text-gray-700 hover:text-gray-900" href="#">
+     <a class="text-gray-700 hover:text-gray-900" href="login.php">
       <i class="far fa-user">
       </i>
      </a>
-     <a class="text-gray-700 hover:text-gray-900" href="#">
+     <a class="text-gray-700 hover:text-gray-900" href="cart.php">
       <i class="fas fa-shopping-cart">
       </i>
      </a>
-     <a class="text-gray-700 hover:text-gray-900" href="#">
+     <a class="text-gray-700 hover:text-gray-900" href="search.php">
       <i class="fas fa-search">
       </i>
      </a>

@@ -83,20 +83,20 @@
       </div>
       <!-- Product Details -->
       <div class="mt-4">
-       <p>
-        Only 35 items left in stock.
-       </p>
-       <div class="flex items-center mt-2">
-        <i class="fas fa-truck mr-2">
-        </i>
         <p>
-         Estimated Delivery: Nov 21 – Nov 25
+          Only 35 items left in stock.
         </p>
-       </div>
-       <p class="mt-2">
-        42 people are viewing this right now
-       </p>
-      </div>
+        <div class="flex items-center mt-2">
+          <i class="fas fa-truck mr-2">
+          </i>
+          <p>
+          Estimated Delivery: Nov 21 – Nov 25
+          </p>
+        </div>
+        <p class="mt-2">
+          42 people are viewing this right now
+        </p>
+        </div>
       <!-- Share and Save -->
       <div class="flex items-center mt-4">
        <button class="text-gray-500 mr-2">
