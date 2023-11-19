@@ -1,5 +1,5 @@
 <?php
-require_once 'product_db.php';
+require_once 'db/db_product.php';
 
 function add_to_cart( $product_id, $quantity = 1 )
 {
