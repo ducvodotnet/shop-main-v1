@@ -97,7 +97,7 @@
      </h1>
      <div class="flex justify-between mt-10 mb-5">
       <div class="flex">
-       <img alt="Placeholder image of a yellow short-sleeved shirt labeled 'Short Sleeved Kaws'" class="h-20" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-0tzkDZzIIoTfNKVeunK7yjUW/user-Xc8PFER1m4EHcxA9OEsbfsEX/img-wy26tF6BeygwoGkhJWziWmWL.png?st=2023-11-19T07%3A07%3A07Z&amp;se=2023-11-19T09%3A07%3A07Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2023-11-18T19%3A58%3A13Z&amp;ske=2023-11-19T19%3A58%3A13Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=kHl%2Bkj4DZwEtab2c7G9bBUxafitIvURH8IU7wltagPU%3D" width="100"/>
+       <img alt="Placeholder image of a yellow short-sleeved shirt labeled 'Short Sleeved Kaws'" class="h-20" height="100" src="public/img/Sample_Product_Image3-26.jpg" width="100"/>
        <div class="ml-4 flex flex-col">
         <span class="font-bold text-sm">
          Short Sleeved Kaws

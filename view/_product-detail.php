@@ -27,12 +27,12 @@
     <div class="flex">
      <!-- Product Images -->
      <div class="w-1/2 space-y-4">
-      <img alt="Classic Sweater main image" class="w-full" height="800" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-0tzkDZzIIoTfNKVeunK7yjUW/user-Xc8PFER1m4EHcxA9OEsbfsEX/img-H7a8CiFusLslhRMTXSiAiKu1.png?st=2023-11-19T08%3A55%3A58Z&amp;se=2023-11-19T10%3A55%3A58Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2023-11-18T19%3A58%3A49Z&amp;ske=2023-11-19T19%3A58%3A49Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=KbxKTbhzPiO3V6f1oAsFKXG%2B7BtuTvLVeU4MOY9tXOw%3D" width="600"/>
+      <img alt="Classic Sweater main image" class="w-full" height="800" src="public/img/Sample_Product_Image3-26.jpg" width="600"/>
       <div class="flex space-x-2">
-       <img alt="Classic Sweater thumbnail image" class="w-1/4" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-0tzkDZzIIoTfNKVeunK7yjUW/user-Xc8PFER1m4EHcxA9OEsbfsEX/img-ZPunmci3FfxB8VYAltIvzOZy.png?st=2023-11-19T08%3A55%3A57Z&amp;se=2023-11-19T10%3A55%3A57Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2023-11-18T20%3A15%3A45Z&amp;ske=2023-11-19T20%3A15%3A45Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=uui6ZPH20kOVRKUu6L%2BdsGXVRpncl7wwF6eWrXWxpHw%3D" width="100"/>
-       <img alt="Classic Sweater thumbnail image" class="w-1/4" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-0tzkDZzIIoTfNKVeunK7yjUW/user-Xc8PFER1m4EHcxA9OEsbfsEX/img-ZPunmci3FfxB8VYAltIvzOZy.png?st=2023-11-19T08%3A55%3A57Z&amp;se=2023-11-19T10%3A55%3A57Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2023-11-18T20%3A15%3A45Z&amp;ske=2023-11-19T20%3A15%3A45Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=uui6ZPH20kOVRKUu6L%2BdsGXVRpncl7wwF6eWrXWxpHw%3D" width="100"/>
-       <img alt="Classic Sweater thumbnail image" class="w-1/4" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-0tzkDZzIIoTfNKVeunK7yjUW/user-Xc8PFER1m4EHcxA9OEsbfsEX/img-ZPunmci3FfxB8VYAltIvzOZy.png?st=2023-11-19T08%3A55%3A57Z&amp;se=2023-11-19T10%3A55%3A57Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2023-11-18T20%3A15%3A45Z&amp;ske=2023-11-19T20%3A15%3A45Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=uui6ZPH20kOVRKUu6L%2BdsGXVRpncl7wwF6eWrXWxpHw%3D" width="100"/>
-       <img alt="Classic Sweater thumbnail image" class="w-1/4" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-0tzkDZzIIoTfNKVeunK7yjUW/user-Xc8PFER1m4EHcxA9OEsbfsEX/img-ZPunmci3FfxB8VYAltIvzOZy.png?st=2023-11-19T08%3A55%3A57Z&amp;se=2023-11-19T10%3A55%3A57Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2023-11-18T20%3A15%3A45Z&amp;ske=2023-11-19T20%3A15%3A45Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=uui6ZPH20kOVRKUu6L%2BdsGXVRpncl7wwF6eWrXWxpHw%3D" width="100"/>
+       <img alt="Classic Sweater thumbnail image" class="w-1/4" height="100" src="public/img/Sample_Product_Image5-4.jpg" width="100"/>
+       <img alt="Classic Sweater thumbnail image" class="w-1/4" height="100" src="public/img/Sample_Product_Image5-4.jpg" width="100"/>
+       <img alt="Classic Sweater thumbnail image" class="w-1/4" height="100" src="public/img/Sample_Product_Image5-4.jpg" width="100"/>
+       <img alt="Classic Sweater thumbnail image" class="w-1/4" height="100" src="public/img/Sample_Product_Image5-4.jpg" width="100"/>
       </div>
      </div>
      <!-- Product Info -->
@@ -168,7 +168,7 @@
     </h2>
     <div class="flex space-x-4">
      <div class="w-1/4">
-      <img alt="Gathered Sleeve" class="w-full" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-0tzkDZzIIoTfNKVeunK7yjUW/user-Xc8PFER1m4EHcxA9OEsbfsEX/img-oSJpXhmqdLuwClyLkpKMBHf6.png?st=2023-11-19T08%3A55%3A56Z&amp;se=2023-11-19T10%3A55%3A56Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2023-11-18T20%3A13%3A26Z&amp;ske=2023-11-19T20%3A13%3A26Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=mzaobBpdQt0n2PMMP/z849nCA4Hh01GgZEc1Jibz5AA%3D" width="100"/>
+      <img alt="Gathered Sleeve" class="w-full" height="100" src="public/img/Sample_Product_Image3-26.jpg" width="100"/>
       <p class="text-sm mt-2">
        Gathered Sleeve
       </p>
@@ -177,7 +177,7 @@
       </p>
      </div>
      <div class="w-1/4">
-      <img alt="Short T-Shirt" class="w-full" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-0tzkDZzIIoTfNKVeunK7yjUW/user-Xc8PFER1m4EHcxA9OEsbfsEX/img-L99Rq9lrhdlGNGZtE1eMjZDY.png?st=2023-11-19T08%3A55%3A54Z&amp;se=2023-11-19T10%3A55%3A54Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2023-11-18T20%3A00%3A52Z&amp;ske=2023-11-19T20%3A00%3A52Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=OxzYMXxPYR3FOqdTy/H22T/CIZiQASA2WViW2lpG6xs%3D" width="100"/>
+      <img alt="Short T-Shirt" class="w-full" height="100" src="public/img/Sample_Product_Image3-26.jpg" width="100"/>
       <p class="text-sm mt-2">
        Short T-Shirt
       </p>
@@ -186,7 +186,7 @@
       </p>
      </div>
      <div class="w-1/4">
-      <img alt="Chenille Sweater" class="w-full" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-0tzkDZzIIoTfNKVeunK7yjUW/user-Xc8PFER1m4EHcxA9OEsbfsEX/img-6o7hZfeabAzPf0lsLXgHawt7.png?st=2023-11-19T08%3A56%3A07Z&amp;se=2023-11-19T10%3A56%3A07Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2023-11-18T20%3A05%3A49Z&amp;ske=2023-11-19T20%3A05%3A49Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=gc8CMzWYewgykWn6Ce8KpYv4HqidEOf%2BltcsBm8ER9o%3D" width="100"/>
+      <img alt="Chenille Sweater" class="w-full" height="100" src="public/img/Sample_Product_Image3-26.jpg" width="100"/>
       <p class="text-sm mt-2">
        Chenille Sweater
       </p>
@@ -195,7 +195,7 @@
       </p>
      </div>
      <div class="w-1/4">
-      <img alt="Young Black" class="w-full" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-0tzkDZzIIoTfNKVeunK7yjUW/user-Xc8PFER1m4EHcxA9OEsbfsEX/img-H8RQMQIsFppnps52WNmlJex2.png?st=2023-11-19T08%3A55%3A54Z&amp;se=2023-11-19T10%3A55%3A54Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2023-11-18T20%3A00%3A19Z&amp;ske=2023-11-19T20%3A00%3A19Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=vty2D7I6mv7V/YWYA6BYOsEWXcU/MTrf01oD5XFzyGY%3D" width="100"/>
+      <img alt="Young Black" class="w-full" height="100" src="public/img/Sample_Product_Image3-26.jpg" width="100"/>
       <p class="text-sm mt-2">
        Young Black
       </p>

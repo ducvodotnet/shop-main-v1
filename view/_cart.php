@@ -49,7 +49,7 @@
      <div class="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
       <div class="flex w-2/5">
        <div class="w-20">
-        <img alt="Yellow short-sleeved t-shirt with Kaws design" class="h-24" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-0tzkDZzIIoTfNKVeunK7yjUW/user-Xc8PFER1m4EHcxA9OEsbfsEX/img-aECJNFpPigL3PFzpnFr0JMhY.png?st=2023-11-19T06%3A39%3A18Z&amp;se=2023-11-19T08%3A39%3A18Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2023-11-18T19%3A55%3A18Z&amp;ske=2023-11-19T19%3A55%3A18Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=t4paTnKSdmuwLtKGsHvo70kyG7XlamxL%2BZSL0ENewko%3D" width="100"/>
+        <img alt="Yellow short-sleeved t-shirt with Kaws design" class="h-24" height="100" src="public/img/Sample_Product_Image3-26.jpg" width="100"/>
        </div>
        <div class="flex flex-col justify-between ml-4 flex-grow">
         <span class="font-bold text-sm">
