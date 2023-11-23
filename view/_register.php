@@ -16,23 +16,14 @@
 <body class="bg-gray-200 flex items-center justify-center h-screen">
     <div class="bg-white p-8 rounded-lg shadow-lg relative" style="width: 400px;">
         <h2 class="text-2xl font-semibold mb-6">Welcome!</h2>
-        <form>
+        <form action="register.php" method="post">
+        <i style="color: red;"><?php if(isset( $_SESSION['flash_message'])) echo  $_SESSION['flash_message']; unset( $_SESSION['flash_message']); ?></i>
             <div class="mb-4">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
-                    Username*
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                    Email*
                 </label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username">
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="email" type="text" placeholder="Username">
                 <div class="flex items-center justify-between mt-1">
-
-                </div>
-            </div>
-            <div class="mb-4">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
-                    Email *
-                </label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" placeholder="Email">
-                <div class="flex items-center justify-between mt-1">
-
                 </div>
             </div>
             <div class="mb-6">
@@ -40,11 +31,11 @@
                     Password *
                 </label>
                 
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************">
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" name="password" type="password" placeholder="Enter your Password">
 
             </div>
             <div class="flex items-center justify-between">
-                <button class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full" type="button">
+                <button class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full" type="submit">
                 Register
                 </button>
             </div>
