@@ -1,236 +1,212 @@
-<!DOCTYPE html>
+<?php require_once 'core/boot.php'; ?>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="./public/css/style.css">
-    <link rel="stylesheet" href="./public/fonts/fontawesome/all.css">
-    <script src="./public/js/chon-option.js"></script>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Home
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="bg-white text-gray-700">
     <?php
     include "inc/header.php";
     ?>
-    <div class="slider">
-        <img src="public/img/slide.png" alt="">
-    </div>
-    <div class="categories">
-        <h2>Feature Categories </h2>
-        <div class="box-categories">
-            <div class="box">
-                <img src="public/img/Men.jpg" alt="">
-                <a href="#">Men</a>
-            </div>
-            <div class="box">
-                <img src="public/img/Women.jpg" alt="">
-                <a href="#">Women</a>
-            </div>
-            <div class="box">
-                <img src="public/img/Youth.jpg" alt="">
-                <a href="#">Youth</a>
-            </div>
-            <div class="box">
-                <img src="public/img/Home.jpg" alt="">
-                <a href="#">Home</a>
-            </div>
-            <div class="box">
-                <img src="public/img/Phone-Case.jpg" alt="">
-                <a href="#">Phone Case</a>
-            </div>
-            <div class="box">
-                <img src="public/img/Bags.jpg" alt="">
-                <a href="#">Bags</a>
-            </div>
-        </div>
-    </div>
-    <div class="recommend">
-        <h2>Recommend For You</h2>
-        <div class="slect-tag">
-            <a href="#" class="chon">BEST SELLER</a>
-            <a href="#">WOMEN</a>
-            <a href="#">MAN</a>
-            <a href="#">ON SALE</a>
-            <a href="#">NEW</a>
-        </div>
-        <div class="list-sp">
-            <div class="box-sp">
-                <img src="public/img/Sample_Product_Image3-8-450x450.jpg" alt="">
-                <div class="text-sp">
-                    <a href="product-detail.php" class="loai-sp">MEN</a>
-                    <a href="product-detail.php" class="ten-sp">Short Sleeved Kaws</a>
-                    <p class="gia-sp">$45.00</p>
+    <main class="container mx-auto px-6">
+        <!-- Promo section -->
+        <section class="my-10">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h2 class="text-6xl font-bold text-gray-800">
+                        LIMITED TIME
+                    </h2>
+                    <p class="text-4xl font-bold text-green-500 my-4">
+                        30% Off
+                    </p>
+                    <p class="text-xl text-gray-700 mb-6">
+                        with promo code
+                    </p>
+                    <button class="bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600">
+                        SHOP NOW
+                    </button>
                 </div>
+                <img alt="Promotional products including a green t-shirt, a black t-shirt, a white tote bag, and various stickers with different logos" class="rounded-lg shadow-lg" src="https://placehold.co/500x300" />
             </div>
-            <div class="box-sp">
-                <img src="public/img/Sample_Product_Image3-8-450x450.jpg" alt="">
-                <div class="text-sp">
-                    <a href="product-detail.php" class="loai-sp">MEN</a>
-                    <a href="product-detail.php" class="ten-sp">Short Sleeved Kaws</a>
-                    <p class="gia-sp">$45.00</p>
-                </div>
-            </div>
-            <div class="box-sp">
-                <img src="public/img/Sample_Product_Image3-8-450x450.jpg" alt="">
-                <div class="text-sp">
-                    <a href="product-detail.php" class="loai-sp">MEN</a>
-                    <a href="product-detail.php" class="ten-sp">Short Sleeved Kaws</a>
-                    <p class="gia-sp">$45.00</p>
-                </div>
-            </div>
-            <div class="box-sp">
-                <img src="public/img/Sample_Product_Image3-8-450x450.jpg" alt="">
-                <div class="text-sp">
-                    <a href="product-detail.php" class="loai-sp">MEN</a>
-                    <a href="product-detail.php" class="ten-sp">Short Sleeved Kaws</a>
-                    <p class="gia-sp">$45.00</p>
-                </div>
-            </div>
-            <div class="box-sp">
-                <img src="public/img/Sample_Product_Image3-8-450x450.jpg" alt="">
-                <div class="text-sp">
-                    <a href="product-detail.php" class="loai-sp">MEN</a>
-                    <a href="product-detail.php" class="ten-sp">Short Sleeved Kaws</a>
-                    <p class="gia-sp">$45.00</p>
-                </div>
-            </div>
-            <div class="box-sp">
-                <img src="public/img/Sample_Product_Image3-8-450x450.jpg" alt="">
-                <div class="text-sp">
-                    <a href="product-detail.php" class="loai-sp">MEN</a>
-                    <a href="product-detail.php" class="ten-sp">Short Sleeved Kaws</a>
-                    <p class="gia-sp">$45.00</p>
-                </div>
-            </div>
-            <div class="box-sp">
-                <img src="public/img/Sample_Product_Image3-8-450x450.jpg" alt="">
-                <div class="text-sp">
-                    <a href="product-detail.php" class="loai-sp">MEN</a>
-                    <a href="product-detail.php" class="ten-sp">Short Sleeved Kaws</a>
-                    <p class="gia-sp">$45.00</p>
-                </div>
-            </div>
-            <div class="box-sp">
-                <img src="public/img/Sample_Product_Image3-8-450x450.jpg" alt="">
-                <div class="text-sp">
-                    <a href="product-detail.php" class="loai-sp">MEN</a>
-                    <a href="product-detail.php" class="ten-sp">Short Sleeved Kaws</a>
-                    <p class="gia-sp">$45.00</p>
-                </div>
-            </div>
-        </div>
-        <div class="load-more">
-            <a href="#" class="chon">LOAD MORE</a>
-        </div>
-    </div>
-    <div class="shop-now">
-        <div class="shop1">
-            <img src="public/img/Banner_01.jpg" alt="">
-            <div class="shop-text">
-                <p class="shop-head1">Bag with </p>
-                <p class="shop-head1">rose pattern</p>
-                <p class="sale-off-center">Sale off 25% </p>
-                <a href="#">Shop now</a>
-            </div>
-        </div>
-        <div class="shop1">
-            <img src="public/img/Banner_02.jpg" alt="">
-            <div class="shop-text">
-                <p class="shop-head1">Hello </p>
-                <p class="shop-head1">Summer</p>
-                <p class="sale-off-center">Sale off 15% </p>
-                <a href="#">Shop now</a>
-            </div>
-        </div>
-        <div class="shop1">
-            <img src="public/img/Banner_03.jpg" alt="">
-            <div class="shop-text">
-                <p class="shop-head1">Let’Party</p>
-                <p class="shop-head1">Hard Pillow</p>
-                <p class="sale-off-center">Sale off 35% </p>
-                <a href="#">Shop now</a>
-            </div>
-        </div>
-    </div>
-    <div class="featured-items">
-        <h2>Featured Items </h2>
-        <p>Find a bright ideal to suit your taste with our great selection of suspension, wall, floor and table light </p>
-    </div>
-    <div class="featured-box">
-        <div class="list-sp">
-            <div class="box-sp">
-                <img src="public/img/Sample_Product_Image3-8-450x450.jpg" alt="">
-                <div class="text-sp">
-                    <a href="product-detail.php" class="loai-sp">MEN</a>
-                    <a href="product-detail.php" class="ten-sp">Short Sleeved Kaws</a>
-                    <p class="gia-sp">$45.00</p>
-                    <div class="select-size-color">
-                        <div class="color-select">
-                            <div class="option-color" id="blue" style="background-color: blue;" onclick="selectColor('blue')"></div>
-                            <div class="option-color" id="yellow" style="background-color: yellow;" onclick="selectColor('yellow')"></div>
-                            <div class="option-color" id="pink" style="background-color: pink;" onclick="selectColor('pink')"></div>
-                        </div>
-                        <br>
-                        <div class="option-size" id="L" onclick="selectSize('L')">L</div>
-                        <div class="option-size" id="XL" onclick="selectSize('XL')">XL</div>
-                        <div class="option-size" id="XXL" onclick="selectSize('XXL')">XXL</div>
+        </section>
+        <!-- Featured Categories -->
+        <section class="my-10">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">
+                Featured Categories
+            </h3>
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                <?php $category_list = get_all_categories() ?>
+                <?php foreach ($category_list as $category) { ?>
+                    <div class="text-center">
+                        <img alt="Men category image" class="mx-auto mb-2" src="<?php echo $category['image']; ?>" />
+                        <p>
+                            <a href="category.php?category_id=<?php echo $category['id']; ?>"><?php echo $category['name']; ?></a>
+                        </p>
                     </div>
+                <?php } ?>
                 </div>
-            </div>
-            <div class="box-sp">
-                <img src="public/img/Sample_Product_Image3-8-450x450.jpg" alt="">
-                <div class="text-sp">
-                    <a href="product-detail.php" class="loai-sp">MEN</a>
-                    <a href="product-detail.php" class="ten-sp">Short Sleeved Kaws</a>
-                    <p class="gia-sp">$45.00</p>
-                    <div class="select-size-color">
-                        <div class="color-select">
-                            <div class="option-color" id="blue" style="background-color: blue;" onclick="selectColor('blue')"></div>
-                            <div class="option-color" id="yellow" style="background-color: yellow;" onclick="selectColor('yellow')"></div>
-                            <div class="option-color" id="pink" style="background-color: pink;" onclick="selectColor('pink')"></div>
+        </section>
+        <!-- Recommend For You -->
+        <section class="my-10">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">
+                Recommend For You
+            </h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- Product-->
+                <?php $product_list = get_all_products();
+                ?>
+                <?php foreach ($product_list as $product) {
+                ?>
+                        <div class="border rounded-lg overflow-hidden">
+                            <img alt="Yellow short-sleeved t-shirt with a black graphic on the chest" class="w-full" src="<?php echo $product['image']; ?>" />
+                            <div class="p-4">
+                                <h4 class="font-bold">
+                                    <a href="product-detail.php?id=<?php echo $product['id']; ?>"><?php echo $product['name']; ?></a>
+                                </h4>
+                                <p class="text-gray-500">
+                                    $<?php echo $product['price']; ?>
+                                </p>
+                                <div class="flex justify-between items-center mt-4">
+                                    <button class="text-gray-500 hover:text-gray-700">
+                                        <i class="far fa-heart">
+                                        </i>
+                                    </button>
+                                    <button class="text-gray-500 hover:text-gray-700">
+                                        <i class="fas fa-shopping-cart">
+                                        </i>
+                                    </button>
+                                    <button class="text-gray-500 hover:text-gray-700">
+                                        <i class="fas fa-search">
+                                        </i>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <br>
-                        <div class="option-size" id="L" onclick="selectSize('L')">L</div>
-                        <div class="option-size" id="XL" onclick="selectSize('XL')">XL</div>
-                        <div class="option-size" id="XXL" onclick="selectSize('XXL')">XXL</div>
-                    </div>
+                <?php }
+                ?>
+            </div>
+            <div class="text-center mt-6">
+                <button class="bg-gray-200 text-gray-700 px-6 py-2 rounded hover:bg-gray-300">
+                    LOAD MORE ...
+                </button>
+            </div>
+        </section>
+        <!-- Banner section -->
+        <section class="my-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-yellow-100 p-6 rounded-lg text-center">
+                    <h4 class="font-bold text-gray-800 mb-2">
+                        Bag with rose pattern
+                    </h4>
+                    <p class="text-gray-500 mb-4">
+                        Sale off 25%
+                    </p>
+                    <button class="bg-yellow-500 text-white px-6 py-2 rounded hover:bg-yellow-600">
+                        Shop now
+                    </button>
+                </div>
+                <div class="bg-pink-100 p-6 rounded-lg text-center">
+                    <h4 class="font-bold text-gray-800 mb-2">
+                        Hello Summer
+                    </h4>
+                    <p class="text-gray-500 mb-4">
+                        Shop now
+                    </p>
+                    <button class="bg-pink-500 text-white px-6 py-2 rounded hover:bg-pink-600">
+                        Shop now
+                    </button>
+                </div>
+                <div class="bg-teal-100 p-6 rounded-lg text-center">
+                    <h4 class="font-bold text-gray-800 mb-2">
+                        Let' Party Hard Pillow
+                    </h4>
+                    <p class="text-gray-500 mb-4">
+                        Shop now
+                    </p>
+                    <button class="bg-teal-500 text-white px-6 py-2 rounded hover:bg-teal-600">
+                        Shop now
+                    </button>
                 </div>
             </div>
-            <div class="box-sp">
-                <img src="public/img/Sample_Product_Image3-8-450x450.jpg" alt="">
-                <div class="text-sp">
-                    <a href="product-detail.php" class="loai-sp">MEN</a>
-                    <a href="product-detail.php" class="ten-sp">Short Sleeved Kaws</a>
-                    <p class="gia-sp">$45.00</p>
-                    <div class="select-size-color">
-                        <div class="color-select">
-                            <div class="option-color" id="blue" style="background-color: blue;" onclick="selectColor('blue')"></div>
-                            <div class="option-color" id="yellow" style="background-color: yellow;" onclick="selectColor('yellow')"></div>
-                            <div class="option-color" id="pink" style="background-color: pink;" onclick="selectColor('pink')"></div>
+        </section>
+        <!-- Featured Items -->
+        <section class="my-10">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">
+                Featured Items
+            </h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- Product-->
+                <?php $product_list = get_all_products();
+                ?>
+                <?php foreach ($product_list as $product) {
+                ?>
+                        <div class="border rounded-lg overflow-hidden">
+                            <img alt="Yellow short-sleeved t-shirt with a black graphic on the chest" class="w-full" src="<?php echo $product['image']; ?>" />
+                            <div class="p-4">
+                                <h4 class="font-bold">
+                                    <a href="product-detail.php?id=<?php echo $product['id']; ?>"><?php echo $product['name']; ?></a>
+                                </h4>
+                                <p class="text-gray-500">
+                                    $<?php echo $product['price']; ?>
+                                </p>
+                                <div class="flex justify-between items-center mt-4">
+                                    <button class="text-gray-500 hover:text-gray-700">
+                                        <i class="far fa-heart">
+                                        </i>
+                                    </button>
+                                    <button class="text-gray-500 hover:text-gray-700">
+                                        <i class="fas fa-shopping-cart">
+                                        </i>
+                                    </button>
+                                    <button class="text-gray-500 hover:text-gray-700">
+                                        <i class="fas fa-search">
+                                        </i>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <br>
-                        <div class="option-size" id="L" onclick="selectSize('L')">L</div>
-                        <div class="option-size" id="XL" onclick="selectSize('XL')">XL</div>
-                        <div class="option-size" id="XXL" onclick="selectSize('XXL')">XXL</div>
-                    </div>
+                <?php }
+                ?>
+        </section>
+        <!-- Promo section -->
+        <section class="my-10">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h2 class="text-6xl font-bold text-gray-800">
+                        NEW DESIGN
+                    </h2>
+                    <p class="text-4xl font-bold text-yellow-500 my-4">
+                        Up to 50% Off
+                    </p>
+                    <p class="text-xl text-gray-700 mb-6">
+                        All T-Shirt &amp; Accessories
+                    </p>
+                    <button class="bg-yellow-500 text-white px-6 py-2 rounded hover:bg-yellow-600">
+                        SHOP NOW
+                    </button>
                 </div>
+                <img alt="Promotional t-shirts in white, black, and yellow with various graphics on the chest" class="rounded-lg shadow-lg" src="https://placehold.co/500x300" />
             </div>
-        </div>
-    </div>
-    </div>
-    <div class="banner-foot">
-        <img src="public/img/Banner_04.jpg" alt="">
-        <div class="text">
-            <p>NEW DESIGN </p>
-            <h2>Up to <span class="green-text">50% Off</span> <br> All T-Shirt & Accessories</h2>
-            <button class="green-button"><a href="#">SHOP NOW</a></button>
-        </div>
-    </div>
-    <?php
-    include "inc/footer.php";
-    ?>
+        </section>
+        <!-- Footer -->
+        <?php
+        include "inc/footer.php";
+        ?>
+    </main>
 </body>
 
 </html>
