@@ -40,7 +40,7 @@
                         SHOP NOW
                     </button>
                 </div>
-                <img alt="Promotional products including a green t-shirt, a black t-shirt, a white tote bag, and various stickers with different logos" class="rounded-lg shadow-lg" src="https://placehold.co/500x300" />
+                <img alt="Promotional products including a green t-shirt, a black t-shirt, a white tote bag, and various stickers with different logos" class="rounded-lg shadow-lg" src="public/img/Sample_Product_Image3-8-450x450.jpg" />
             </div>
         </section>
         <!-- Featured Categories -->
@@ -199,7 +199,7 @@
                         SHOP NOW
                     </button>
                 </div>
-                <img alt="Promotional t-shirts in white, black, and yellow with various graphics on the chest" class="rounded-lg shadow-lg" src="https://placehold.co/500x300" />
+                <img alt="Promotional t-shirts in white, black, and yellow with various graphics on the chest" class="rounded-lg shadow-lg" src="public/img/Bags.jpg" />
             </div>
         </section>
         <!-- Footer -->

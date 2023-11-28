@@ -71,20 +71,24 @@
             Lorem ipsum has been the industry's standard dummy text ever since the 1500s.
           </p>
           <!-- Product Actions -->
-          <div class="flex items-center mt-4">
-            <div class="pr-4">
-              <label class="sr-only" for="quantity">
-                Quantity
-              </label>
-              <input class="border border-gray-300 rounded-md p-2" id="quantity" min="1" name="quantity" type="number" value="1" />
+          <form action="cart.php" method="post">
+            <input type="hidden" name="action" value="create">
+            <input type="hidden" name="productId" value="<?php echo $product['id']; ?>">
+            <div class="flex items-center mt-4">
+              <div class="pr-4">
+                <label class="sr-only" for="quantity">
+                  Quantity
+                </label>
+                <input class="border border-gray-300 rounded-md p-2" id="quantity" min="1" name="quantity" type="number" value="1" />
+              </div>
+              <button type="submit" class="bg-black text-white px-8 py-2 rounded-md">
+                ADD TO CART
+              </button>
+              <button type="submit" class="bg-red-500 text-white px-8 py-2 rounded-md ml-2">
+                BUY NOW
+              </button>
             </div>
-            <button class="bg-black text-white px-8 py-2 rounded-md">
-              ADD TO CART
-            </button>
-            <button class="bg-red-500 text-white px-8 py-2 rounded-md ml-2">
-              BUY NOW
-            </button>
-          </div>
+          </form>
           <!-- Product Details -->
           <div class="mt-4">
             <p>
