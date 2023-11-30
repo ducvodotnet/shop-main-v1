@@ -46,9 +46,9 @@
             Subtotal
           </h3>
         </div>
-        <div class="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
-          <?php $cart_list = get_cart(); ?>
-          <?php foreach ($cart_list as $order_detail) { ?>
+        <?php $cart_list = get_cart(); ?>
+        <?php foreach ($cart_list as $order_detail) { ?>
+          <div class="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
             <div class="flex w-2/5">
               <div class="w-20">
                 <img alt="Yellow short-sleeved t-shirt with Kaws design" class="h-24" height="100" src="<?php echo $order_detail['image'] ?>" width="100" />
@@ -101,8 +101,8 @@
                 <button type="submit" class="fas fa-trash"></button>
               </form>
             </div>
-          <?php } ?>
-        </div>
+          </div>
+        <?php } ?>
         <a class="flex font-semibold text-indigo-600 text-sm mt-10" href="#">
           <svg class="fill-current mr-2 text-indigo-600 w-4" viewbox="0 0 448 512">
             <path d="M134.059 296H24c-13.255 0-24-10.745-24-24V24C0 10.745 10.745 0 24 0h282.059c13.255 0 24 10.745 24 24v248c0 13.255-10.745 24-24 24H214.059v10c0 13.255-10.745 24-24 24h-40c-13.255 0-24-10.745-24-24v-10zm214.059-24H376c-13.255 0-24-10.745-24-24V24c0-13.255 10.745-0 24-0h72.118c13.255 0 24 10.745 24 24v224c0 13.255-10.745 24-24 24z">
@@ -117,7 +117,7 @@
         </h1>
         <div class="flex justify-between mt-10 mb-5">
           <span class="font-semibold text-sm uppercase">
-          Subtotal
+            Subtotal
           </span>
           <span class="font-semibold text-sm">
             $<?php echo total_cart(); ?>

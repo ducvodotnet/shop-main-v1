@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
         }
     </style>
 </head>
+
 <body class="bg-white text-gray-700">
     <div class="container mx-auto px-6 py-8">
         <div class="grid grid-cols-4 gap-4 mb-6">
@@ -66,4 +68,5 @@
         </div>
     </div>
 </body>
+
 </html>
