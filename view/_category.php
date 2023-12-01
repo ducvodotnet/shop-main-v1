@@ -5,7 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Category</title>
+    <?php $category_list = get_category($_GET['category_id']); ?>
+    <title><?php echo $category_list['name']; ?></title>
     <link rel="stylesheet" href="./public/css/style.css">
     <link rel="stylesheet" href="./public/fonts/fontawesome/all.css">
 </head>
@@ -16,10 +17,13 @@
     ?>
     <div class="breadcrumb">
         <img src="./public/img/elessi-bg2.jpg" alt="">
+        <?php $category_list = get_category($_GET['category_id']); ?>
+
         <div class="text">
-            <h2>Men</h2>
-            <p>Home > T-Shirt</p>
+            <h2><?php echo $category_list['name']; ?></h2>
+            <p>Home > <?php echo $category_list['name']; ?></p>
         </div>
+
     </div>
     <section class="my-10">
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">

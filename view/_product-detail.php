@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <?php $product = get_product($_GET['id']); ?>
   <title>
-    Elessi - Classic Sweater
+    <?php echo $product['name']; ?>
   </title>
   <script src="https://cdn.tailwindcss.com">
   </script>

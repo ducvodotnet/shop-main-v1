@@ -1,5 +1,7 @@
 <?php
+
 require_once './core/config.php';
+
 $pdo = get_pdo();
 
 function get_all_products(){
