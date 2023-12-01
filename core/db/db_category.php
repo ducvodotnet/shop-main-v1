@@ -80,15 +80,16 @@ function get_category($category_id){
     return null;
 }
 
-function update_category($id, $name, $img){
+function update_category($id, $name, $image, $description){
     global $pdo;
-    $sql = "UPDATE categories SET NAME=:name, image=:img WHERE ID=:id";
+    $sql = "UPDATE categories SET NAME=:name, image=:image, description=:description WHERE ID=:id";
     $stmt = $pdo->prepare($sql);
 
    
     $stmt->bindParam(':name', $name);
     $stmt->bindParam(':image', $image);
     $stmt->bindParam(':id', $id);
+    $stmt->bindParam(':description', $description);
 
     $stmt->execute();
 }
