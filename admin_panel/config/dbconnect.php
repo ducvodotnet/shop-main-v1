@@ -3,7 +3,7 @@
 $server = "localhost";
 $user = "root";
 $password = "";
-$db = "swiss_collection";
+$db = "shop";
 
 $conn = mysqli_connect($server,$user,$password,$db);
 

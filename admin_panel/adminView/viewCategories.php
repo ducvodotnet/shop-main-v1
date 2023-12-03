@@ -4,14 +4,16 @@
   <table class="table ">
     <thead>
       <tr>
-        <th class="text-center">S.N.</th>
+        <th class="text-center">ID</th>
+        <th class="text-center">Image</th>
         <th class="text-center">Category Name</th>
+        <th class="text-center">Description</th>
         <th class="text-center" colspan="2">Action</th>
       </tr>
     </thead>
     <?php
       include_once "../config/dbconnect.php";
-      $sql="SELECT * from category";
+      $sql="SELECT * FROM `categories`";
       $result=$conn-> query($sql);
       $count=1;
       if ($result-> num_rows > 0){
@@ -19,9 +21,11 @@
     ?>
     <tr>
       <td><?=$count?></td>
-      <td><?=$row["category_name"]?></td>   
+      <td><img height='100px' src='<?=$row["image"]?>'></td>
+      <td><?=$row["name"]?></td>   
+      <td><?=$row["description"]?></td>   
       <!-- <td><button class="btn btn-primary" >Edit</button></td> -->
-      <td><button class="btn btn-danger" style="height:40px" onclick="categoryDelete('<?=$row['category_id']?>')">Delete</button></td>
+      <td><button class="btn btn-danger" style="height:40px" onclick="categoryDelete('<?=$row['id']?>')">Delete</button></td>
       </tr>
       <?php
             $count=$count+1;
@@ -49,7 +53,15 @@
           <form  enctype='multipart/form-data' action="./controller/addCatController.php" method="POST">
             <div class="form-group">
               <label for="c_name">Category Name:</label>
-              <input type="text" class="form-control" name="c_name" required>
+              <input type="text" class="form-control" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="c_name">Category Description:</label>
+              <input type="text" class="form-control" name="description" required>
+            </div>
+            <div class="form-group">
+                <label for="file">Choose Image:</label>
+                <input type="file" class="form-control-file" name="file">
             </div>
             <div class="form-group">
               <button type="submit" class="btn btn-secondary" name="upload" style="height:40px">Add Category</button>

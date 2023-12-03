@@ -3,56 +3,47 @@
   <table class="table table-striped">
     <thead>
       <tr>
-        <th>O.N.</th>
+        <th>ID</th>
         <th>Customer</th>
-        <th>Contact</th>
-        <th>OrderDate</th>
-        <th>Payment Method</th>
+        <th>Products</th>
+        <th>Quantity</th>
+        <th>Total Price</th>
         <th>Order Status</th>
-        <th>Payment Status</th>
-        <th>More Details</th>
      </tr>
     </thead>
      <?php
       include_once "../config/dbconnect.php";
-      $sql="SELECT * from orders";
+      $sql="Select  order_items.order_id AS 'ID', users.email AS 'email', products.name AS 'productsname', order_items.quantity AS 'quantity', order_items.price*order_items.quantity AS 'price', orders.status AS 'status' from order_items
+      inner join products on order_items.product_id = products.id
+      inner join orders on order_items.order_id = orders.id
+      inner join users on orders.user_id = users.id
+      ;";
       $result=$conn-> query($sql);
       
       if ($result-> num_rows > 0){
         while ($row=$result-> fetch_assoc()) {
     ?>
        <tr>
-          <td><?=$row["order_id"]?></td>
-          <td><?=$row["delivered_to"]?></td>
-          <td><?=$row["phone_no"]?></td>
-          <td><?=$row["order_date"]?></td>
-          <td><?=$row["pay_method"]?></td>
+          <td><?=$row["ID"]?></td>
+          <td><?=$row["email"]?></td>
+          <td><?=$row["productsname"]?></td>
+          <td><?=$row["quantity"]?></td>
+          <td>$<?=$row["price"]?></td>
            <?php 
-                if($row["order_status"]==0){
+                if($row["status"]=='pending'){
                             
             ?>
-                <td><button class="btn btn-danger" onclick="ChangeOrderStatus('<?=$row['order_id']?>')">Pending </button></td>
+                <td><button class="btn btn-danger" onclick="ChangeOrderStatus('<?=$row['ID']?>')">Pending </button></td>
             <?php
                         
                 }else{
             ?>
-                <td><button class="btn btn-success" onclick="ChangeOrderStatus('<?=$row['order_id']?>')">Delivered</button></td>
+                <td><button class="btn btn-success" onclick="ChangeOrderStatus('<?=$row['ID']?>')">Delivered</button></td>
         
             <?php
             }
-                if($row["pay_status"]==0){
-            ?>
-                <td><button class="btn btn-danger"  onclick="ChangePay('<?=$row['order_id']?>')">Unpaid</button></td>
-            <?php
-                        
-            }else if($row["pay_status"]==1){
-            ?>
-                <td><button class="btn btn-success" onclick="ChangePay('<?=$row['order_id']?>')">Paid </button></td>
-            <?php
-                }
             ?>
               
-        <td><a class="btn btn-primary openPopup" data-href="./adminView/viewEachOrder.php?orderID=<?=$row['order_id']?>" href="javascript:void(0);">View</a></td>
         </tr>
     <?php
             

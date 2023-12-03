@@ -4,7 +4,7 @@
    
     $order_id=$_POST['record'];
     //echo $order_id;
-    $sql = "SELECT order_status from orders where order_id='$order_id'"; 
+    $sql = "SELECT status from orders where id='$order_id'"; 
     $result=$conn-> query($sql);
   //  echo $result;
 
@@ -12,11 +12,11 @@
     
    // echo $row["pay_status"];
     
-    if($row["order_status"]==0){
-         $update = mysqli_query($conn,"UPDATE orders SET order_status=1 where order_id='$order_id'");
+    if($row["status"]=='pending'){
+         $update = mysqli_query($conn,"UPDATE orders SET status='delivered' where id='$order_id'");
     }
-    else if($row["order_status"]==1){
-         $update = mysqli_query($conn,"UPDATE orders SET order_status=0 where order_id='$order_id'");
+    else if($row["status"]=='delivered'){
+         $update = mysqli_query($conn,"UPDATE orders SET status='pending' where id='$order_id'");
     }
     
         
