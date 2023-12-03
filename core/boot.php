@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-define('BASE_URL', 'http://localhost/do-an');
+define('BASE_URL', 'http://localhost/do-an/shopv1/');
 
 require_once 'auth.php';
 require_once 'db/db_product.php';

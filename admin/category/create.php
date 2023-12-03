@@ -1,5 +1,6 @@
 <?php
-require_once '../../core/boot.php';
+
+include ("../core/config.php");
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $_POST['name'];
