@@ -25,6 +25,7 @@
       <td><?=$row["name"]?></td>   
       <td><?=$row["description"]?></td>   
       <!-- <td><button class="btn btn-primary" >Edit</button></td> -->
+      <td><button class="btn btn-primary" style="height:40px" onclick="categoryEdit('<?=$row['id']?>')">Edit</button></td>
       <td><button class="btn btn-danger" style="height:40px" onclick="categoryDelete('<?=$row['id']?>')">Delete</button></td>
       </tr>
       <?php
@@ -52,12 +53,12 @@
         <div class="modal-body">
           <form  enctype='multipart/form-data' action="./controller/addCatController.php" method="POST">
             <div class="form-group">
-              <label for="c_name">Category Name:</label>
-              <input type="text" class="form-control" name="name" required>
+              <label for="name">Category Name:</label>
+              <input type="text" class="form-control" name="c_name" required>
             </div>
             <div class="form-group">
-              <label for="c_name">Category Description:</label>
-              <input type="text" class="form-control" name="description" required>
+              <label for="name">Category Description:</label>
+              <input type="text" class="form-control" name="c_description" required>
             </div>
             <div class="form-group">
                 <label for="file">Choose Image:</label>

@@ -374,3 +374,83 @@ function addToWish(id){
         }
     });
 }
+
+
+//show users
+function showUsers(){  
+    $.ajax({
+        url:"./adminView/viewCustomers.php",
+        method:"post",
+        data:{record:1},
+        success:function(data){
+            $('.allContent-section').html(data);
+        }
+    });
+}
+
+//users delete
+function usersDelete(id){
+    $.ajax({
+        url:"./controller/deleteUsers.php",
+        method:"post",
+        data:{record:id},
+        success:function(data){
+            alert('Users Successfully deleted');
+            $('form').trigger('reset');
+            showUsers();
+        }
+    });
+}
+
+//Edit Users
+function usersEdit(id){
+    $.ajax({
+        url:"./adminView/editUsers.php",
+        method:"post",
+        data:{record:id},
+        success:function(data){
+            $('.allContent-section').html(data);
+        }
+    });
+}
+
+//Edit Category
+function categoryEdit(id){
+    $.ajax({
+        url:"./adminView/editCategories.php",
+        method:"post",
+        data:{record:id},
+        success:function(data){
+            $('.allContent-section').html(data);
+        }
+    });
+}
+
+
+
+
+//orders delete
+function ordersDelete(ID){
+    $.ajax({
+        url:"./controller/deleteOrders.php",
+        method:"post",
+        data:{record:ID},
+        success:function(data){
+            alert('Orders Successfully deleted');
+            $('form').trigger('reset');
+            showOrders();
+        }
+    });
+}
+
+//orders Edit
+function ordersEdit(id){
+    $.ajax({
+        url:"./adminView/editCategories.php",
+        method:"post",
+        data:{record:id},
+        success:function(data){
+            $('.allContent-section').html(data);
+        }
+    });
+}
