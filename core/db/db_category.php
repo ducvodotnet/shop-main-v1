@@ -1,5 +1,5 @@
 <?php
-require_once './core/config.php';
+require_once 'config.php';
 $pdo = get_pdo();
 
 function get_all_categories(){
@@ -33,7 +33,7 @@ function get_all_categories(){
 function delete_category($category_id){
     global $pdo;
 
-    $sql = "DELETE FROM categories WHERE ID=:id";
+    $sql = "DELETE FROM CATEGORIES WHERE ID=:id";
     $stmt = $pdo->prepare($sql);
     $stmt->bindParam(':id', $category_id);
 
@@ -41,15 +41,17 @@ function delete_category($category_id){
 
 }
 
-function insert_category($name, $img){
+function insert_category($category)
+{
     global $pdo;
-    $sql = "INSERT INTO categories(ID, NAME, image, description) VALUES(NULL, :name, :image, :description)";
+    $sql = "INSERT INTO CATEGORIES(ID, IMAGE, NAME, DESCRIPTION) VALUES(NULL, :image, :name, :description)";
     $stmt = $pdo->prepare($sql);
-    
-   
-    $stmt->bindParam(':name', $name);
-    $stmt->bindParam(':image', $img);
-    $stmt->bindParam(':description', $description);
+
+
+    $stmt->bindParam(':image', $category['image']);
+    $stmt->bindParam(':name', $category['name']);
+    $stmt->bindParam(':description', $category['description']);
+
     $stmt->execute();
 }
 
