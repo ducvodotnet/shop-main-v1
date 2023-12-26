@@ -33,7 +33,6 @@
                         </div>
                         <div class="card-body">
                             <form action="create.php" method="post">
-                                <input type="hidden" name="id" />
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Code</label>
                                     <input type="text" name="code" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
@@ -44,11 +43,27 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Users</label>
-                                    <select class="form-control" name="users_id">
+                                    <select class="form-control" name="user_id">
                                         <?php foreach ($userName as $user) { ?>
                                             <option value="<?php echo $user['email'] ?>"><?php echo $user['email'] ?></option>
                                         <?php } ?>
                                     </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Products</label>
+                                    <select class="form-control" name="product_id">
+                                        <?php foreach ($productsName as $products) { ?>
+                                            <option value="<?php echo $products['name'] ?>"><?php echo $products['name'] ?></option>
+                                        <?php } ?>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Quantity</label>
+                                    <input type="number" name="quantity" class="form-control" id="exampleInputPassword1" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Price</label>
+                                    <input type="number" name="price" class="form-control" id="exampleInputPassword1" placeholder="">
                                 </div>
                                 <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Submit</button>
                             </form>
