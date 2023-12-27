@@ -1,24 +1,8 @@
 <?php
 require_once '../core/boot.php';
 
-if (!isset($_SESSION['orderStatistical'])) {
-
-    $_SESSION['orderStatistical'] = array();
-}
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if (isset($_POST['from']) && isset($_POST['arrive'])) {
-        $_SESSION['dateFrom'] = $_POST['from'];
-        $_SESSION['dateArrive'] = $_POST['arrive'];
-    }
-    $_SESSION['getorderDate'] = array(
-        'dateFrom' => $_SESSION['dateFrom'],
-        'dateArrive' => $_SESSION['dateArrive'],
-    );
 
-    $_SESSION['orderStatistical'] = get_orders_by_date($_SESSION['getorderDate']);
-    header('location: index.php');
-
-    // chk xong
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {

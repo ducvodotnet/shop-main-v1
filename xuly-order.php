@@ -6,6 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     if(isset($_SESSION['cart'])){
+        
         $order = array(
             'code' => string_random(10),
             'status' => 'pending',

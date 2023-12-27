@@ -51,7 +51,8 @@
           <div class="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
             <div class="flex w-2/5">
               <div class="w-20">
-                <img alt="Yellow short-sleeved t-shirt with Kaws design" class="h-24" height="100" src="<?php echo $order_detail['image'] ?>" width="100" />
+                <img alt="Yellow short-sleeved t-shirt with Kaws design" class="h-24" height="100"
+                  src="<?php echo $order_detail['image'] ?>" width="100" />
               </div>
               <div class="flex flex-col justify-between ml-4 flex-grow">
                 <span class="font-bold text-sm">
@@ -72,10 +73,12 @@
               </div>
             </div>
             <span class="text-center w-1/5 font-semibold text-sm">
-              $<?php echo $order_detail['price'] ?>
+              $
+              <?php echo $order_detail['price'] ?>
             </span>
             <div class="flex border border-gray-300 text-gray-600 divide-x divide-gray-300">
-              <form action="cart.php" method="post" class="h-8 w-8 text-xl flex items-center justify-center cursor-pointer select-none">
+              <form action="cart.php" method="post"
+                class="h-8 w-8 text-xl flex items-center justify-center cursor-pointer select-none">
                 <input type="hidden" name="action" value="update">
                 <input type="hidden" name="value" value="-1">
                 <input type="hidden" name="productId" value="<?php echo $order_detail['product_id']; ?>">
@@ -84,7 +87,8 @@
               <div class="h-8 w-10 flex items-center justify-center">
                 <?php echo $order_detail['quantity']; ?>
               </div>
-              <form action="cart.php" method="post" class="h-8 w-8 text-xl flex items-center justify-center cursor-pointer select-none">
+              <form action="cart.php" method="post"
+                class="h-8 w-8 text-xl flex items-center justify-center cursor-pointer select-none">
                 <input type="hidden" name="action" value="update">
                 <input type="hidden" name="value" value="1">
                 <input type="hidden" name="productId" value="<?php echo $order_detail['product_id']; ?>">
@@ -92,7 +96,8 @@
               </form>
             </div>
             <span class="text-center w-2/5 font-semibold text-sm">
-              $<?php echo total_cart_item($order_detail['price'], $order_detail['quantity']); ?>
+              $
+              <?php echo total_cart_item($order_detail['price'], $order_detail['quantity']); ?>
             </span>
             <div class="text-gray-600 hover:text-primary cursor-pointer">
               <form action="cart.php" method="post">
@@ -105,7 +110,8 @@
         <?php } ?>
         <a class="flex font-semibold text-indigo-600 text-sm mt-10" href="#">
           <svg class="fill-current mr-2 text-indigo-600 w-4" viewbox="0 0 448 512">
-            <path d="M134.059 296H24c-13.255 0-24-10.745-24-24V24C0 10.745 10.745 0 24 0h282.059c13.255 0 24 10.745 24 24v248c0 13.255-10.745 24-24 24H214.059v10c0 13.255-10.745 24-24 24h-40c-13.255 0-24-10.745-24-24v-10zm214.059-24H376c-13.255 0-24-10.745-24-24V24c0-13.255 10.745-0 24-0h72.118c13.255 0 24 10.745 24 24v224c0 13.255-10.745 24-24 24z">
+            <path
+              d="M134.059 296H24c-13.255 0-24-10.745-24-24V24C0 10.745 10.745 0 24 0h282.059c13.255 0 24 10.745 24 24v248c0 13.255-10.745 24-24 24H214.059v10c0 13.255-10.745 24-24 24h-40c-13.255 0-24-10.745-24-24v-10zm214.059-24H376c-13.255 0-24-10.745-24-24V24c0-13.255 10.745-0 24-0h72.118c13.255 0 24 10.745 24 24v224c0 13.255-10.745 24-24 24z">
             </path>
           </svg>
           Continue Shopping
@@ -120,7 +126,8 @@
             Subtotal
           </span>
           <span class="font-semibold text-sm">
-            $<?php echo total_cart(); ?>
+            $
+            <?php echo total_cart(); ?>
           </span>
         </div>
         <div>
@@ -148,7 +155,8 @@
               Total cost
             </span>
             <span>
-              $<?php echo total_cart(); ?>
+              $
+              <?php echo total_cart(); ?>
             </span>
           </div>
           <button class="bg-indigo-500 font-semibold hover:bg-indigo-600 py-3 text-sm text-white uppercase w-full">
